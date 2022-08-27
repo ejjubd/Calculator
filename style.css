@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body{ 
+    background-color: rgb(128,63, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.main-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.calculator{
+    width: 25%;
+    background-color: rgb(35, 6, 43);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+    background-color: rgb(103, 119, 119);
+    
+}
+.upper-screen, .down-screen{
+    height: 8vh;
+    width: 100%;
+    color: white;
+  
+}
+
+.upper-screen{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 20px;
+
+}
+
+
+.down-screen{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+
+.keyboard{
+    width: 100%;
+    display:grid ;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+.clear-delete {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.clear, .delete{
+    width: 100%;
+}
+
+
+.clear-delete button{
+
+  width: 100%;
+  padding: 20px;
+  background-color:tomato;
+}
+
+.delete button{
+    background-color: blueviolet;
+}
+
+.digits  button{
+    width: 100%;
+    padding: 30px 0;   
+    background-color: antiquewhite;
+}
+.operators button{
+    width: 100%;
+    padding: 30px 0; 
+    background-color: antiquewhite;
+}
+
+button:hover{
+    background-color: rgb(56, 32, 3);
+   
+}
+
+.footer{
+    margin-top: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+@media screen and (max-width:768px){
+    .calculator{
+        width: 90%;
+    }
+}

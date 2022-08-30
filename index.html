@@ -11,31 +11,31 @@
     <div class="main-container">
       <div class="calculator">
         <div class="screen">
-            <div id="upper-screen"> 7156 + 6 = </div>
-            <div id="down-screen">677</div>
+            <div id="upper-screen"></div>
+            <div id="down-screen"> 0 </div>
         </div>
         <div class="clear-delete">
-            <div id="clear"> <button>CLEAR</button></div>
-            <div id="delete"> <button>DELETE</button></div>
+            <div  id="clear"> <button onclick="clearScreen()">CLEAR</button></div>
+            <div id="delete"> <button onclick="deleteButton()">DELETE</button></div>
         </div>
        
         <div class="keyboard">
-            <button class="digits"  >7</button>
-            <button class="digits">8</button>
-            <button class="digits">9</button>
-           <button class="operators">%</button>
-            <button class="digits">4</button>
-            <button class="digits">5</button>
-           <button class="digits">6</button>
-           <button class="operators">*</button>
-            <button class="digits">1</button>
-            <button class="digits">2</button>
-           <button class="digits">3</button>
-           <button class="operators">-</button>
-            <button class="operators">.</button>
-            <button class="digits">0</button>
-            <button class="operators">=</button>
-            <button class="operators">+</button>
+            <button onclick="getNumber(7)" class="digits" >7</button>
+            <button onclick="getNumber(8)" class="digits">8</button>
+            <button onclick="getNumber(9)" class="digits">9</button>
+           <button  onclick="getNumber('/')"class="operators">/</button>
+            <button onclick="getNumber(4)" class="digits">4</button>
+            <button onclick="getNumber(5)" class="digits">5</button>
+           <button  onclick="getNumber(6)"class="digits">6</button>
+            <button onclick="getNumber('*')"class="operators">*</button>
+            <button onclick="getNumber(1)" class="digits"">1</button>
+            <button onclick="getNumber(2)" class="digits">2</button>
+           <button  onclick="getNumber(3)"class="digits">3</button>
+           <button  onclick="getNumber('-')"class="operators">-</button>
+            <button onclick="getNumber('.')" class="operators">.</button>
+            <button onclick="getNumber(0)" class="digits">0</button>
+            <button onclick="calculate()" class="operators">=</button>
+            <button onclick="getNumber('+')" class="operators">+</button>
             
         </div> 
     </div>

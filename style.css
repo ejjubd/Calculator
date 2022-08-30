@@ -34,14 +34,14 @@ body{
     background-color: rgb(103, 119, 119);
     
 }
-.upper-screen, .down-screen{
+#upper-screen, #down-screen{
     height: 8vh;
     width: 100%;
     color: white;
   
 }
 
-.upper-screen{
+#upper-screen{
     color: white;
     display: flex;
     justify-content: flex-end;
@@ -52,7 +52,7 @@ body{
 }
 
 
-.down-screen{
+#down-screen{
     display: flex;
     justify-content: flex-end;
     font-size: 40px;
@@ -76,7 +76,7 @@ body{
     width: 100%;
 }
 
-.clear, .delete{
+#clear, #delete{
     width: 100%;
 }
 
@@ -88,16 +88,18 @@ body{
   background-color:tomato;
 }
 
-.delete button{
+#delete button{
     background-color: blueviolet;
 }
 
-.digits  button{
+
+
+.digits {
     width: 100%;
     padding: 30px 0;   
     background-color: antiquewhite;
 }
-.operators button{
+.operators {
     width: 100%;
     padding: 30px 0; 
     background-color: antiquewhite;

@@ -34,45 +34,17 @@ function operate(operator,a,b){
     }
 }
 
-let n = ""
 const operators = ["/", "*", "+", "-"]
-let shouldCalculate = false
-let operator = ""
-let temp = ""
-let calc = 0
+
+let array = []
+let n = ""
 
 function getNumber(number) {
 
-    if(operators.includes(number)){
-        
-        if(calc) {
-            document.getElementById('upper-screen').innerHTML = calc+ " " +number
-            temp = calc
-        }
-        else {
-            document.getElementById('upper-screen').innerHTML = n+" "+number
-            temp = n
-        }
-        shouldCalculate = false
-        operator = number
-        n = ""
-        document.getElementById('down-screen').innerHTML = n
-
-    } else if(shouldCalculate){
-        
-        calc += operate(operator, temp, number)
-        document.getElementById('upper-screen').innerHTML = calc
-        temp = ""
-        shouldCalculate = false
-
-    } else {
-        n+=number
-        document.getElementById('down-screen').innerHTML = n
-    }
-    
-
 }
 
+
+// function includes()
 
 
 
@@ -91,10 +63,11 @@ function clearScreen() {
 
 function deleteButton () {
    
+
     n = n.slice(0,-1)
-    document.getElementById('down-screen').innerHTML = n
-   
-    }
+    if(n === "") document.getElementById('down-screen').innerHTML = 0
+    else document.getElementById('down-screen').innerHTML = n
+}
    
 
 

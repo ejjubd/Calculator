@@ -1,5 +1,4 @@
-let a = ''
-let b = ''
+
 
 function add (a,b){
     return a+b
@@ -39,12 +38,10 @@ const operators = ["/", "*", "+", "-"]
 let array = []
 let n = ""
 
-function getNumber(number) {
+let a = '';
+let b = '';
+let operator;
 
-}
-
-
-// function includes()
 
 
 
